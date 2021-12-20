@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <script>
+      var ele = document.querySelector("h1");
+
+      var array = [];
+
+      for (var i = 0; i < 1000; i++) {
+        if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+          array.push(i);
+        }
+      }
+
+      ele.innerHTML = array;
+    </script>
+  </body>
+</html>
